@@ -1,0 +1,6 @@
+{
+  "name": "Neenerener",
+  "background": "Guild Associate",
+  "speed": 5,
+  "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
+}

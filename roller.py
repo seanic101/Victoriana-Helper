@@ -5,31 +5,42 @@ random.seed()
 class DiceRoller:
 
     @classmethod
-    def __rollD6(cls, numberOfDice : int): #__ denotes a private method
-        rolls = [random.randint(1, 6) for i in range(numberOfDice)] # list comprehension
+    def __roll_d6(cls, number_of_dice : int): #__ denotes a private method
+        """
+        Rolls numberOfDice 6 sided dice and returns a list of the results
+        :param number_of_dice: the number of dice to roll
+        :return: a list of the dice roll outcomes
+        """
+        rolls = [random.randint(1, 6) for i in range(number_of_dice)] # list comprehension
         print(rolls)
         return rolls
 
     @classmethod # basically a static method
-    def rollSuccesses(cls, numberOfDice : int, diceType='white'):
-        firstRole = cls.__rollD6(numberOfDice=numberOfDice)
+    def roll_successes(cls, number_of_dice : int, dice_type='white'):
+        """
+
+        :param number_of_dice:
+        :param dice_type:
+        :return:
+        """
+        first_roll = cls.__roll_d6(number_of_dice=number_of_dice)
 
         # count the number of ones
-        numberOfOnes = sum([1 if roll == 1 else 0 for roll in firstRole])
+        number_of_ones = sum([1 if roll == 1 else 0 for roll in first_roll])
 
         # count the number of sixes
-        numberOfSixes = sum([1 if roll == 6 else 0 for roll in firstRole])
+        number_of_sixes = sum([1 if roll == 6 else 0 for roll in first_roll])
 
-        numberOfSuccesses = numberOfOnes + numberOfSixes
+        number_of_successes = number_of_ones + number_of_sixes
 
         # if we are rolling white dice, reroll the sixes, otherwise don't
-        if diceType == 'white':
-            secondRole = cls.__rollD6(numberOfDice=numberOfSixes)
+        if dice_type == 'white':
+            second_roll = cls.__roll_d6(number_of_dice=number_of_sixes)
 
             # count the number of ones and sixes in the second role and add it to the number of successes
-            numberOfSuccesses += sum([1 if roll == 6 or roll == 1 else 0 for roll in secondRole])
+            number_of_successes += sum([1 if roll == 6 or roll == 1 else 0 for roll in second_roll])
 
-        return numberOfSuccesses
+        return number_of_successes
 
-for i in range(10):
-    print(DiceRoller.rollSuccesses(6))
+#print(DiceRoller.roll_successes(8))
+#print(DiceRoller.roll_successes(3, dice_type='black'))
