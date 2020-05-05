@@ -19,12 +19,15 @@ def load_json_object(filename):
 charData = load_json_object('player1data.json')
 
 # print full dictionary
+print("This prints out the full dictionary");
 print(charData)
 
 # print the name of the characters 1st spell
+print("print the name of the characters 1st spell");
 print(charData['spells'][0]['name'])
 
 # if you wanted to put multiple characters into the same file you could do this:
+print("if you wanted to put multiple characters into the same file you could do this:");
 playersData = load_json_object('multiple_player_data.json')
 
 # this will print out an array of player dictionary objects
@@ -32,8 +35,45 @@ print("Array: ")
 print(playersData)
 
 # now we could loop over the dictionary objects and create player objects
+#print("");
+print("now we could loop over the dictionary objects and create player objects");
 players = []
 print("Create individual player objects: ")
 for playerData in playersData:
     print(playerData)
     players.append(Player(playerData))
+
+print("test number 1: ")
+for thing in playersData:
+    print(thing);
+
+    
+print("test number 2: ")
+for players in players:
+    print(playerData['speed'])
+    #trying to get all speeds. got 1 speed 3 times
+
+    
+print("test number 3: ")
+#this is will get us the right speeds with names
+for playerData in playersData:
+    print(playerData['name']+" "+str(playerData['speed']))
+
+print(" ");
+print("test number 4: ");
+#this will give us data only if the name matches a preset variable
+holder = "Neenerener 1";
+for playerData in playersData:
+    if(holder==playerData['name']):
+        print(playerData['name']+" "+str(playerData['speed']))
+
+
+
+
+
+
+
+
+
+
+

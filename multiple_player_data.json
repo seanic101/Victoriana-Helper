@@ -1,18 +1,18 @@
 [{
-  "name": "Neenerener",
+  "name": "Neenerener 1",
   "background": "Guild Associate",
-  "speed": 5,
+  "speed": 3,
   "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
 },
 {
   "name": "Neenerener 2",
   "background": "Guild Associate",
   "speed": 5,
-  "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
+  "spells": [{"name": "Big blast", "damage": 8, "cost": 2, "difficulty": 3}]
 },
 {
   "name": "Neenerener 3",
   "background": "Guild Associate",
-  "speed": 5,
+  "speed": 7,
   "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
 }]
