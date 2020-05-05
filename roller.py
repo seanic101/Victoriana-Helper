@@ -42,5 +42,5 @@ class DiceRoller:
 
         return number_of_successes
 
-#print(DiceRoller.roll_successes(8))
-#print(DiceRoller.roll_successes(3, dice_type='black'))
+print(DiceRoller.roll_successes(8))
+print(DiceRoller.roll_successes(3, dice_type='black'))
