@@ -3,6 +3,7 @@ import os
 import random 
 import player
 from roller import DiceRoller
+from player import look_through_json
 
 import discord
 from dotenv import load_dotenv
@@ -44,8 +45,15 @@ async def on_message(message):
 
     if message.content == ('roll8'):
                 print(str(message.author)+" typed "+str(message.content))
-                response = "The";
+                response = DiceRoller.roll_successes(8)
                 await message.channel.send(response)
-                
+    else:
+        print(str(message.author)+" typed "+str(message.content))
+        catcher = look_through_json(message.content)
+        if(catcher!=''):
+            response = catcher
+        await message.channel.send(response)
+
+        
 print(DiceRoller.roll_successes(8))
 client.run(TOKEN)
