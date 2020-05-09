@@ -12,7 +12,7 @@ class Player:
     def get(self, key):
         return self.data[key]
 
-    def __role_attribute(self, attribute_name):
+    def __roll_attribute(self, attribute_name):
         return DiceRoller.roll_successes(self.data["attributes"][attribute_name])
 
     def __roll_skill(self, skill_name: str):
@@ -56,6 +56,10 @@ class Player:
         if query_type == 'skill':
             skill_name = query_list[1]
             return self.__roll_skill(skill_name)
+
+        if query_type == 'attribute':
+            attribute_name = query_list[1]
+            return self.__roll_attribute(attribute_name)
 
         if query_type == 'spell':
             spell_name = query_list[1]
