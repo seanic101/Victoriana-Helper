@@ -3,10 +3,13 @@ import os
 import random 
 import player
 from roller import DiceRoller
-from player import look_through_json
+from Game import Game
 
 import discord
 from dotenv import load_dotenv
+
+# create a game object
+game = Game('multiple_player_data.json')
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -49,11 +52,13 @@ async def on_message(message):
                 await message.channel.send(response)
     else:
         print(str(message.author)+" typed "+str(message.content))
-        catcher = look_through_json(message.content)
-        if(catcher!=''):
-            response = catcher
+
+        game_response = game.handle_bot_query(message.content)
+
+        response = None
+        if(game_response!=''):
+            response = game_response
+
         await message.channel.send(response)
 
-        
-print(DiceRoller.roll_successes(8))
 client.run(TOKEN)
