@@ -19,7 +19,7 @@
           "complication_2": "stuff/none",
           "complication_3": "stuff/none",
           "complication_4": "stuff/none",
-		  "attributes":{"strength": 0, "presence": 0, "dexterity": 0, "resolve": 0,"fortitude":0,"initiative":0,"health":0,"wits"},
+		  "attributes":{"strength": 0, "presence": 0, "dexterity": 0, "resolve": 0,"fortitude":0,"initiative":0,"health":0,"wits":0},
           "skills": [
 {"name": "Accounting", "value": 0, "attribute": "wits", "classification": "specialty"},
 {"name": "Act", "value": 0, "attribute": "Presence", "classification": "specialty"},
