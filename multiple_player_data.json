@@ -17,7 +17,7 @@
     {"name": "Empathy", "value": 4, "attribute": "Presence"},
     {"name": "General Knowledge", "value": 3, "attribute": "Wits"}
   ],
-  "spells": [{"name": "Magic Missile", "type": "thaumaturgy", "damage": 8, "cost": 2, "difficulty": 3}, {"name": "Firestorm", "type": "thaumaturgy", "cost": 4, "difficulty": 9}]
+  "spells": [{"name": "Magic Missile", "type": "Thaumaturgy", "damage": 8, "cost": 2, "difficulty": 3}, {"name": "Firestorm", "type": "Thaumaturgy", "cost": 4, "difficulty": 9}]
 },
   {
     "name": "Ivy",
