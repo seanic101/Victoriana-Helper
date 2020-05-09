@@ -1,19 +1,69 @@
 [{
   "name": "Neenerener",
   "background": "Guild Associate",
+  "attributes": {"Wits": 4, "Resolve": 5, "Dexterity": 1, "Strength": -2, "Presence": 1, "Fortitude": 1, "Health": 4, "Quintessence": 30},
   "speed": 3,
-  "perception": 5,
-  "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
+  "skills": [
+    {"name": "Perception", "value": 3, "attribute": "Wits"},
+    {"name": "Thaumaturgy", "value": 8, "attribute": "Resolve"},
+    {"name": "Concentration", "value": 3, "attribute": "Resolve"},
+    {"name": "Charm", "value": 3, "attribute": "Presence"},
+    {"name": "High Society", "value": 0, "attribute": "Wits"},
+    {"name": "Language", "value": 0, "attribute": "Wits"},
+    {"name": "Lore", "value": 3, "attribute": "Wits"},
+    {"name": "Science", "value": 3, "attribute": "Wits"},
+    {"name": "Act", "value": 3, "attribute": "Presence"},
+    {"name": "Art", "value": 0, "attribute": "Presence"},
+    {"name": "Empathy", "value": 4, "attribute": "Presence"},
+    {"name": "General Knowledge", "value": 3, "attribute": "Wits"}
+  ],
+  "spells": [{"name": "Magic Missile", "type": "thaumaturgy", "damage": 8, "cost": 2, "difficulty": 3}, {"name": "Firestorm", "type": "thaumaturgy", "cost": 4, "difficulty": 9}]
 },
-{
-  "name": "Neenerener 2",
-  "background": "Guild Associate",
-  "speed": 5,
-  "spells": [{"name": "Big blast", "damage": 8, "cost": 2, "difficulty": 3}]
-},
-{
-  "name": "Neenerener 3",
-  "background": "Guild Associate",
-  "speed": 7,
-  "spells": [{"name": "Magic Missile", "damage": 8, "cost": 2, "difficulty": 3}]
-}]
+  {
+    "name": "Ivy",
+    "background": "Thief",
+    "attributes": {"Strength": 1, "Dexterity": 2, "Fortitude": 1, "Presence": 3, "Wits": 2, "Resolve": 1},
+    "skills": [
+      {"name": "Charm", "value": 4, "attribute": "Presence"},
+      {"name": "Hide and Sneak", "value": 4, "attribute": "Dexterity"},
+      {"name": "Perception", "value": 4, "attribute": "Wits"},
+      {"name": "Firearms", "value": 4, "attribute": "Dexterity"},
+      {"name": "Pick Locks", "value": 1, "attribute": "Dexterity"},
+      {"name": "Dodge", "value": 2, "attribute": "Dexterity"}
+    ]
+  },
+  {
+    "name": "Erakai",
+    "attributes": {"Strength": 5, "Dexterity": 2, "Fortitude": 6, "Presence": -1, "Wits": -1, "Resolve": 0},
+    "skills": [
+      {"name": "Athletics", "value": 3, "attribute": "Dexterity"},
+      {"name": "Charm", "value": 1, "attribute": "Presence"},
+      {"name": "Dodge", "value": 2, "attribute": "Dexterity"},
+      {"name": "Empathy", "value": 1, "attribute": "Presence"},
+      {"name": "Firearms", "value": 4, "attribute": "Dexterity"},
+      {"name": "Fisticuffs", "value": 4, "attribute": "Dexterity"},
+      {"name": "Intimidate", "value": 3, "attribute": "Presence"},
+      {"name": "Might", "value": 3, "attribute": "Strength"},
+      {"name": "Perception", "value": 3, "attribute": "Wits"},
+      {"name": "Streetwise", "value": 3, "attribute": "Presence"},
+      {"name": "Tracking", "value": 3, "attribute": "Wits"}
+    ]
+  },
+  {
+    "name": "Stickery",
+    "attributes": {"Strength": 2, "Dexterity": 1, "Fortitude": 4, "Presence": 0, "Wits": 0, "Resolve": 3},
+    "skills": [
+      {"name": "Athletics", "value": 4, "attribute": "Dexterity"},
+      {"name": "Animal Handling", "value": 3, "attribute": "Wits"},
+      {"name": "Bull", "value": 0, "attribute": "Presence"},
+      {"name": "Conceal", "value": 4, "attribute": "Wits"},
+      {"name": "Hide and Sneak", "value": 3, "attribute": "Dexterity"},
+      {"name": "Perception", "value": 4, "attribute": "Wits"},
+      {"name": "Tracking", "value": 4, "attribute": "Wits"},
+      {"name": "Firearms", "value": 0, "attribute": "Dexterity"},
+      {"name": "Improvised Weapon", "value": 0, "attribute": "Dexterity"},
+      {"name": "Specialist Weapon", "value": 4, "attribute": "Strength"},
+      {"name": "Thaumaturgy", "value": 4, "attribute": "Resolve"}
+    ]
+  }
+]
