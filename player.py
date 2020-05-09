@@ -21,7 +21,7 @@ class Player:
             if skill["name"] == skill_name:
 
                 # add the attribute dices to the skill value and role for successes
-                n_dice = self.data["attributes"][skill["attribute"]] + skill["level"]
+                n_dice = self.data["attributes"][skill["attribute"]] + skill["value"]
 
                 # if they have less than 1 die, they roll one die
                 if n_dice <= 0:
