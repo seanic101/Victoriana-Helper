@@ -1,7 +1,7 @@
 [{
   "name": "Neenerener",
   "background": "Guild Associate",
-  "attributes": {"Wits": 4, "Resolve": 5, "Dexterity": 1, "Strength": -2, "Presence": 1, "Fortitude": 1, "Health": 4, "Quintessence": 30},
+  "attributes": {"Wits": 4, "Resolve": 5, "Dexterity": 1, "Strength": -2, "Presence": 1, "Fortitude": 1, "Health": 4, "Quintessence": 30, "Initiative": 8},
   "speed": 3,
   "skills": [
     {"name": "Perception", "value": 3, "attribute": "Wits"},
@@ -22,7 +22,7 @@
   {
     "name": "Ivy",
     "background": "Thief",
-    "attributes": {"Strength": 1, "Dexterity": 2, "Fortitude": 1, "Presence": 3, "Wits": 2, "Resolve": 1},
+    "attributes": {"Strength": 1, "Dexterity": 2, "Fortitude": 1, "Presence": 3, "Wits": 2, "Resolve": 1, "Initiative": 8},
     "skills": [
       {"name": "Charm", "value": 4, "attribute": "Presence"},
       {"name": "Hide and Sneak", "value": 4, "attribute": "Dexterity"},
@@ -34,7 +34,7 @@
   },
   {
     "name": "Erakai",
-    "attributes": {"Strength": 5, "Dexterity": 2, "Fortitude": 6, "Presence": -1, "Wits": -1, "Resolve": 0},
+    "attributes": {"Strength": 5, "Dexterity": 2, "Fortitude": 6, "Presence": -1, "Wits": -1, "Resolve": 0, "Initiative": 4},
     "skills": [
       {"name": "Athletics", "value": 3, "attribute": "Dexterity"},
       {"name": "Charm", "value": 1, "attribute": "Presence"},
@@ -51,7 +51,7 @@
   },
   {
     "name": "Stickery",
-    "attributes": {"Strength": 2, "Dexterity": 1, "Fortitude": 4, "Presence": 0, "Wits": 0, "Resolve": 3},
+    "attributes": {"Strength": 2, "Dexterity": 1, "Fortitude": 4, "Presence": 0, "Wits": 0, "Resolve": 3, "Initiative": 5},
     "skills": [
       {"name": "Athletics", "value": 4, "attribute": "Dexterity"},
       {"name": "Animal Handling", "value": 3, "attribute": "Wits"},
