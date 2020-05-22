@@ -28,6 +28,10 @@ class Game:
 
         split_query = query.split('/', 1)
         player_name = split_query[0]
+        if(query==split_query[0]):
+            print("no length to query")
+            return None;
+        
 
         # find the player that the query was for
         player = self.__get_player_by_name(player_name)

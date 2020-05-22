@@ -12,6 +12,31 @@ class Player:
     def get(self, key):
         return self.data[key]
 
+
+
+    def get_skill(self, skill_name: str):
+        n_dice = None;
+        for skill in self.data["skills"]:
+            if skill["name"] == skill_name:
+
+                # add the attribute dices to the skill value and role for successes
+                try:
+                    n_dice = self.data["attributes"][skill["attribute"]] + skill["value"]
+                    print("skill: "+skill_name+" attribute: "+str(self.data["attributes"][skill["attribute"]]) +" skill: "+ str(skill["value"]))
+                    print("We are returning: "+str(n_dice))
+                    if(n_dice!=None):
+                        return n_dice
+                except:
+                    print("error getting the skill")
+                    return 0
+        print("error getting the skill")
+        return None
+
+
+
+
+                
+
     def __roll_attribute(self, attribute_name):
         return DiceRoller.roll_successes(self.data["attributes"][attribute_name])
 
@@ -123,8 +148,8 @@ for playerData in playersData:
         print(playerData['name']+" "+str(playerData['speed']))
 
 """ 
-print(" ");
-print("test number 5: ");
+#print(" ");
+#print("test number 5: ");
 
 
 '''def look_through_json(string):
